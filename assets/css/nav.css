@@ -1,0 +1,133 @@
+nav {
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    background-color: #ffffff;
+    border-bottom: 1.8px solid rgb(255, 255, 255);
+    border-radius: 0 0 10px 10px;
+}
+
+nav ul {
+    float: right;
+    padding-right: 20px;
+    display: inline;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: #222222;
+    padding: 5px 15px 15px 15px;
+    line-height: 50px;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    background-color: orange;
+    padding: 15px 15px 15px 15px;
+    color: #ffffff;
+    line-height: 50px;
+    transition: all 0.3s;
+}
+
+a:active {
+    background-color: white;
+    color: white;
+}
+
+.visit {
+    color: tomato;
+}
+
+@media (min-width:600px) {
+    .btn {
+        display: none;
+    }
+
+    nav {
+        max-width: 1166px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    label .logo {
+        margin-left: 20%;
+    }
+
+    .logo p {
+        font-size: 10px;
+    }
+
+    nav {
+        border-radius: 0px;
+    }
+
+    nav ul {
+        display: block;
+        position: fixed;
+        top: 50px;
+        width: 100%;
+        background-color: #222222;
+        left: 0;
+        text-align: center;
+        left: -100%;
+        transition: all 0.5s;
+        opacity: 0.9;
+    }
+
+    nav ul li {}
+
+    nav ul li a {
+        color: white;
+        font-size: large;
+        line-height: 90px;
+    }
+
+    nav ul li a:hover {
+        line-height: 90px;
+    }
+
+    .btn {
+        float: right;
+        margin: 5px;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+    a:checked~ul {
+        left: -100%;
+    }
+}
+
+.logo p {
+    color: tomato;
+    line-height: 50px;
+    margin-left: 10px;
+    font-size: 20px;
+    display: inline;
+}
+
+label img {
+    width: 40px;
+    height: 40px;
+    margin: 5px 0 0 10px;
+    float: left;
+}
+
+#check {
+    float: right;
+    display: none;
+}
+
+.tebal {
+    font-weight: bolder;
+}
+
+.logo span {
+    color: black;
+    font-size: 13px;
+}
